@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan DOM</title>
+</head>
+<body>
+    <h2>Change Value of Property</h2>
+    <input type="text" id="text">
+    <button id="btn1">Send</button>
+    <p id="text2"></p>
+
+    <script>
+        const x = document.getElementById("text")
+
+        document.getElementById("btn1").addEventListener("click", displayText);
+        function displayText() {
+            document.getElementById("text2").innerHTML = x.value
+        }
+    </script>
+</body>
+</html>
